@@ -15,4 +15,4 @@ jobs:
         uses: pshergie/pull-request-auto-reviewer@1.0.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          datapath: docs/data.yml
+          datapath: data/comments.yml

@@ -1,0 +1,6 @@
+- paths: docs/
+  message: changes in **docs** folder have been made
+- paths: "**/*.js"
+  message: you have touches javascript files. I hope you've enjoyed it
+- paths: data/
+  message: data file(s) have been added/edited
