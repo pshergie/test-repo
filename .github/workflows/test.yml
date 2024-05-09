@@ -1,0 +1,17 @@
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  review:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: pull-request-auto-reviewer
+        uses: pshergie/pull-request-auto-reviewer@1.0.5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
