@@ -12,6 +12,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: pull-request-auto-reviewer
-        uses: pshergie/pull-request-auto-reviewer@1.0.5
+        uses: pshergie/pull-request-auto-reviewer@1.0.6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
