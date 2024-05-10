@@ -1,7 +1,9 @@
-- paths: "**/*.*"
-  message: |
-    ### Please tick the following checkboxes:
+- prependMsg: "🗯️ [pull-request-auto-reviewer]:"
+- checks:
+    - paths: "**/*.*"
+      message: |
+        Self-review checklist (mark all items after checking them):
 
-    - [ ] the code is tested
-    - [ ] files are compressed
-    - [ ] files contain no errors
+        - [ ] Don’t rush. Check all changes in PR again.
+        - [ ] Run `pnpm test`.
+        - [ ] No new errors and warning in the browser console.
